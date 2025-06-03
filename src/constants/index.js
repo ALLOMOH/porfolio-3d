@@ -71,6 +71,11 @@ const logoIconsList = [
   },
 ];
 
+const spinnerImgs = {
+  img:"/images/Spinner.gif"
+}
+
+
 const abilities = [
   {
     imgPath: "/images/seo.png",
@@ -275,4 +280,5 @@ export {
   techStackIcons,
   techStackImgs,
   navLinks,
+  spinnerImgs,
 };
