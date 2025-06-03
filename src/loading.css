@@ -1,0 +1,42 @@
+      .loading-page {
+        padding: 0 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(45deg, #673535, #000564);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .loading-page .svg {
+        width: 100%;
+        stroke-width: 34px;
+        stroke: #ffffff;
+        fill-opacity: 1;
+        stroke-dashoffset: 0;
+        fill-rule: evenodd;
+        stroke-dasharray: 0;
+        animation: draw 8s ease;
+      }
+
+      .name-container {
+        height: 24px;
+        overflow: hidden;
+      }
+
+      @keyframes draw {
+        0% {
+          stroke-dasharray: 100%;
+          fill-opacity: 0;
+        }
+        100% {
+          stroke-dasharray: 0;
+          fill-opacity: 1;
+          fill-rule: 200%;
+          stroke-width: 0;
+        }
+      }
